@@ -1,0 +1,64 @@
+.get-notify {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  > p {
+    font-size: 1rem;
+  }
+  > .valid-email-section {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    > input {
+      width: 40%;
+      display: flex;
+      padding: 0.4rem 0.5rem;
+      outline: none;
+      font-size: medium;
+      background-color: transparent;
+      border: 1px solid #b3b3b3;
+      border-radius: 5px;
+      color: #fff;
+      transition: border 0.5s;
+      &:active,
+      &:focus,
+      &:valid {
+        border: 1px solid #fff;
+      }
+    }
+    > button {
+      padding: 0.4rem 0.5rem;
+      border-radius: 5px;
+      border: none;
+      font-size: large;
+      cursor: pointer;
+    }
+  }
+  .text-message {
+    font-size: 1rem;
+    display: flex;
+    width: 60%;
+    color: red;
+    justify-content: center;
+  }
+}
+
+.loading-animation {
+  .spinner {
+    border-top: 2px solid #000000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

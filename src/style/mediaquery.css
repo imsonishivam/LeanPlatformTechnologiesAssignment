@@ -1,0 +1,96 @@
+@media screen and (max-width: 1310px) {
+  .header {
+    margin: 100px 0;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .header {
+    > .content > div {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .countdown {
+    > .model-background {
+      > .model {
+        > h1 {
+          font-size: 1.5rem;
+        }
+        > p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    > .content {
+      width: 100%;
+      > div {
+        font-size: 1rem;
+      }
+      > p {
+        font-size: 1.2rem;
+        margin: 1rem 2rem;
+      }
+      > h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    > .content {
+      > div {
+        font-size: 0.9rem;
+        > svg {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  .countdown {
+    > .model-background {
+      > .model {
+        width: 70%;
+        height: 40%;
+        > h1 {
+          font-size: 1.5rem;
+        }
+        > p {
+          font-size: 1rem;
+        }
+        > h2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .get-notify {
+    > p {
+      margin: 0 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .header {
+    > .content {
+      > div {
+        font-size: 0.7rem;
+      }
+      > h2 {
+        font-size: 0.9rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

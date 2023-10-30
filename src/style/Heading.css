@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffffc0;
+  margin: 100px 0;
+  > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 3rem;
+    > div {
+      display: flex;
+      gap: 4px;
+      font-size: 2rem;
+      > svg {
+        font-size: 3rem;
+        rotate: 45deg;
+        color: #e948b3;
+        animation: forRocket 800ms ease-in-out infinite;
+      }
+    }
+    > p {
+      font-size: 1.5rem;
+      margin: 1rem 5rem;
+      text-align: center;
+    }
+    > h2 {
+      font-size: 2rem;
+      margin-top: 50px;
+    }
+  }
+}
+
+@keyframes forRocket {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(5%);
+    scale: 1.01;
+  }
+}

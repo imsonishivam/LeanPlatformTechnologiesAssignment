@@ -1,0 +1,87 @@
+@import "./Heading.css";
+@import "./GetNotify.css";
+@import "./RedirectPage.css";
+@import "./Countdown.css";
+@import "./mediaquery.css";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background: #000000;
+}
+
+.blob {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: -7;
+  filter: blur(50px);
+}
+
+.blob1 {
+  position: absolute;
+  top: 0;
+  background-color: #321467;
+  left: 0;
+  animation: move1 22s ease-in infinite;
+}
+
+.blob2 {
+  position: absolute;
+  background-color: #4d0d33;
+  bottom: 0;
+  right: 0;
+  animation: move2 22s ease-in infinite;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translate(1vw, 0);
+  }
+  25% {
+    transform: translate(85vw, 0);
+  }
+  50% {
+    transform: translate(85vw, 75vh);
+  }
+  75% {
+    transform: translate(1vw, 75vh);
+  }
+  100% {
+    transform: translate(1vw, 0);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translate(-1vw, 0);
+  }
+  25% {
+    transform: translate(-85vw, 0);
+  }
+  50% {
+    transform: translate(-85vw, -75vh);
+  }
+  75% {
+    transform: translate(-1vw, -75vh);
+  }
+  100% {
+    transform: translate(-1vw, 0);
+  }
+}
+
+nav {
+  color: #ffffffc0;
+  margin: 30px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  > span {
+    background-color: #ffffffc0;
+    color: #000000;
+  }
+}

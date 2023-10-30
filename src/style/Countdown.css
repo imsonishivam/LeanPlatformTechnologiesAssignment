@@ -1,0 +1,65 @@
+.countdown {
+  width: 300px;
+  height: 120px;
+  background: linear-gradient(90deg, #4d0d33, #321467);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  .for-minutes,
+  .for-seconds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    > p {
+      font-size: 4rem;
+    }
+    > span {
+      font-size: 1rem;
+    }
+  }
+  > .model-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    > .model {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      gap: 1.4rem;
+      height: 30%;
+      width: 40%;
+      background: linear-gradient(135deg, #4d0d33, #321467);
+      border-radius: 10px;
+      > h1 {
+        font-size: 3rem;
+      }
+      > p {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      > button {
+        cursor: pointer;
+        background-color: #fff;
+        color: #000000;
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.5rem;
+        border: none;
+      }
+    }
+  }
+}
